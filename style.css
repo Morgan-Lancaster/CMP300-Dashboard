@@ -1,0 +1,82 @@
+:root{
+    /*https://color.adobe.com/create/color-wheel   Complementary Colours
+    https://davidmathlogic.com/colorblind/#%23994F00-%23006CD1 Colour blind compatability pallete
+    */
+    --theme-colour-1:99,83,39;
+    --theme-colour-2:255,218,94;
+    --theme-colour-3:235,195,63;
+    --theme-colour-4:63,57,235;
+    --theme-colour-5:141,99,235;    
+    --theme-colour-settings:211,211,211;
+}
+#application-wrapper {
+    display:grid;    
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 90%;
+    overflow:visible;
+    gap: 0.05rem;
+    background-color: rgb(var(--theme-colour-5));
+    grid-template-areas: 
+    "🖼️ 🖼️"
+    "⬆️ ⬆️"
+    "📊 📊"
+    "📋 📋";
+    grid-template-rows: 5% 25% 40% 30%;
+    grid-template-columns: 10% 90%;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    align-content: stretch;    
+}
+#Application-Buttons {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;   
+}
+/*Classes*/
+.banner {
+    grid-area: 🖼️;
+    height:100%;
+    width:100%;
+    display: inline-block;    
+    background-color: rgb(var(--theme-colour-1));
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    overflow-wrap:break-word;
+}
+.top-nav {
+    grid-area: ⬆️;
+    background-color: rgb(var(--theme-colour-2)); 
+    overflow: scroll;      
+}
+.table-content {
+    grid-area: 📋;
+    background-color: rgb(var(--theme-colour-settings));  
+    overflow: scroll;  
+}
+.plotly-content {
+    grid-area: 📊;
+    background-color: rgb(var(--theme-colour-5));    
+    display:flex;
+    justify-content:center;
+    margin-top: 1%;       
+}
+.application-button {
+    background-color: burlywood;
+    width: 400px;
+    height:150px;
+    margin-top: 5px;    
+    margin-bottom: 5px;     
+    margin-left: 5px;    
+    margin-right: 5px;   
+
+  }
+.footer {
+    width:100%;
+    height:5%;
+    max-width: 100%;
+    overflow-wrap:break-word;
+}
+

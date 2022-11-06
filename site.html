@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">  
+	<script src="node_modules\plotly.js-dist-min\plotly.min.js"></script>        
+    <title>Content Register</title>
+    <script src="site.js"></script>
+    </head>
+
+    <body style="background-color: rgb(220, 212, 188);" onload=createMenuButtons()>
+        <div id="application-wrapper">
+            <div class="banner">
+                <p>Content Register</p>              
+            </div>
+            <div  class="top-nav">
+                <div id="Usage-Text" style="padding-left:20px;">
+                    <p>Select a Mapping Application from the Gallery Below to update Sankey:</p>
+                </div>
+                <div id="Application-Buttons"></div>
+
+            </div>
+            <div class="table-content">
+                <p>Table</p>
+            </div>            
+            <div class="plotly-content">
+                <div id="gd"></div>
+            </div>            
+        </div>
+        <div class="footer">
+            <p>2022, maps.system.admin</p>
+        </div>
+    </body>
+</html>
